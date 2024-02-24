@@ -11,7 +11,7 @@
     <string name="humadityD">Влажность:</string>
     <string name="FLD">Ощущается как:</string>
     <string name="FL">ОЩУЩАЕТСЯ КАК</string>
-    <string name="windSpeedD">Скорость ветра (м/с):</string>
+    <string name="windSpeedD">Скорость ветра:</string>
     <string name="windSpeed">СКОРОСТЬ ВЕТРА</string>
     <string name="km">м/с</string>
     <string name="currentLocation">Current location</string>

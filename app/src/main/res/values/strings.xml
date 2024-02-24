@@ -11,7 +11,7 @@
     <string name="humadityD">Humadity:</string>
     <string name="FLD">Feels like:</string>
     <string name="FL">FEELS LIKE</string>
-    <string name="windSpeedD">Wind speed (m/sec):</string>
+    <string name="windSpeedD">Wind speed:</string>
     <string name="windSpeed">WIND SPEED</string>
     <string name="km">m/sec</string>
     <string name="currentLocation">Current location</string>
