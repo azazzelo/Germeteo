@@ -7,12 +7,234 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/locationText"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:gravity="center_horizontal"
+        android:text="@string/location_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="name"
+        android:ems="10"
+        android:hint="@string/location_input"
+        android:inputType="text"
+        android:textColorHighlight="@color/cornBlueFlower"
+        android:textColorLink="@color/cornBlueFlower"
+        app:layout_constraintEnd_toEndOf="@+id/locationText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/locationText"
+        app:layout_constraintTop_toBottomOf="@+id/locationText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/TextViewCityD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/cityDescription"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewCity"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewCity"
+                    app:layout_constraintHorizontal_bias="0.488"
+                    app:layout_constraintStart_toStartOf="@+id/textViewCity" />
+
+                <TextView
+                    android:id="@+id/textViewCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="@string/city"
+                    android:textColor="@color/cornBlueFlower"
+                    android:textSize="24sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/LinearLayoutLocation"
+                android:id="@+id/LinearLayoutTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewTempD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/temperatureD"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewTemp"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewTemp"
+                    app:layout_constraintStart_toStartOf="@+id/textViewTemp" />
+
+                <TextView
+                    android:id="@+id/textViewTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="@string/temperature"
+                    android:textColor="@color/cornBlueFlower"
+                    android:textSize="24sp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutFeelsLike"
+                android:layout_below="@id/LinearLayoutTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewFLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/FLD"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewFL"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewFL"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="@+id/textViewFL" />
+
+                <TextView
+                    android:id="@+id/textViewFL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="@string/FL"
+                    android:textColor="@color/cornBlueFlower"
+                    android:textSize="24sp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutHumidity"
+                android:layout_below="@id/LinearLayoutFeelsLike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewHumD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/humadityD"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewHum"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewHum"
+                    app:layout_constraintHorizontal_bias="0.49"
+                    app:layout_constraintStart_toStartOf="@+id/textViewHum" />
+
+                <TextView
+                    android:id="@+id/textViewHum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="@string/humadity"
+                    android:textColor="@color/cornBlueFlower"
+                    android:textSize="24sp"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutWindSpeed"
+                android:layout_below="@id/LinearLayoutHumidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewWPD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/windSpeedD"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewWP"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewWP"
+                    app:layout_constraintStart_toStartOf="@+id/textViewWP" />
+
+                <TextView
+                    android:id="@+id/textViewWP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="@string/windSpeed"
+                    android:textColor="@color/cornBlueFlower"
+                    android:textSize="24sp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ImageButton
+        android:id="@+id/geobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/cornBlueFlower"
+        android:contentDescription="@string/geobutton"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+        app:layout_constraintStart_toEndOf="@+id/editTextText"
+        app:layout_constraintTop_toTopOf="@+id/editTextText"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

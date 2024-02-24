@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Germeteo</string>
+    <string name="location_text">Enter the city:</string>
+    <string name="location_input">Your city</string>
+    <string name="temperature">TEMPERATURE</string>
+    <string name="button">CHECK THE WEATHER</string>
+    <string name="cityDescription">Location:</string>
+    <string name="temperatureD">Temperature:</string>
+    <string name="city">CITY</string>
+    <string name="humadity">HUMADITY</string>
+    <string name="humadityD">Humadity:</string>
+    <string name="FLD">Feels like:</string>
+    <string name="FL">FEELS LIKE</string>
+    <string name="windSpeedD">Wind speed (m/sec):</string>
+    <string name="windSpeed">WIND SPEED</string>
+    <string name="km">m/sec</string>
+    <string name="currentLocation">Current location</string>
+    <string name="geobutton">button for geo search</string>
+    <string name="celsius" translatable="false">°C</string>
 </resources>

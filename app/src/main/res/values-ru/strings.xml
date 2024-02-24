@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Герметео</string>
+    <string name="location_text">Введите город:</string>
+    <string name="location_input">Ваш город</string>
+    <string name="temperature">ТЕМПЕРАТУРА</string>
+    <string name="button">УЗНАТЬ ПОГОДУ</string>
+    <string name="cityDescription">Местоположение:</string>
+    <string name="temperatureD">Температура:</string>
+    <string name="city">ГОРОД</string>
+    <string name="humadity">ВЛАЖНОСТЬ</string>
+    <string name="humadityD">Влажность:</string>
+    <string name="FLD">Ощущается как:</string>
+    <string name="FL">ОЩУЩАЕТСЯ КАК</string>
+    <string name="windSpeedD">Скорость ветра (м/с):</string>
+    <string name="windSpeed">СКОРОСТЬ ВЕТРА</string>
+    <string name="km">м/с</string>
+    <string name="currentLocation">Current location</string>
+    <string name="geobutton">button for geo search</string>
+</resources>
