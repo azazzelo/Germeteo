@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Germeteo" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="colorPrimary">@color/cornBlueFlower</item>
-        <item name="colorAccent">@color/cornBlueFlower</item>
+        <item name="colorPrimary">@color/germanGreen</item>
+        <item name="colorAccent">@color/germanGreen</item>
 
     </style>
     <style name="Theme.Germeteo" parent="Base.Theme.Germeteo" />

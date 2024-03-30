@@ -2,7 +2,6 @@ package com.example.germeteo
 
 import android.app.AlertDialog
 import android.content.Context
-import android.widget.Toast
 
 object DialogManager {
     fun locationSettingsDialog(context: Context, listener: Listener) {

@@ -137,7 +137,6 @@ class MainActivity : AppCompatActivity() {
         latit = item.latitude
         longit = item.longitude
         cityFromRequest = item.city
-
     }
 
     private fun isLocationEnabled(): Boolean { //проверка на включенность геолокации на телефоне
