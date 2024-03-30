@@ -86,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
                     android:text="@string/city"
-                    android:textColor="@color/cornBlueFlower"
+                    android:textColor="@color/germanGreen"
                     android:textSize="24sp"
                     android:visibility="invisible" />
             </LinearLayout>
@@ -116,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
                     android:text="@string/temperature"
-                    android:textColor="@color/cornBlueFlower"
+                    android:textColor="@color/germanGreen"
                     android:textSize="24sp"
                     android:visibility="invisible" />
 
@@ -148,7 +148,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
                     android:text="@string/FL"
-                    android:textColor="@color/cornBlueFlower"
+                    android:textColor="@color/germanGreen"
                     android:textSize="24sp"
                     android:visibility="invisible" />
 
@@ -180,7 +180,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
                     android:text="@string/humadity"
-                    android:textColor="@color/cornBlueFlower"
+                    android:textColor="@color/germanGreen"
                     android:textSize="24sp"
                     android:visibility="invisible" />
 
@@ -212,7 +212,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
                     android:text="@string/windSpeed"
-                    android:textColor="@color/cornBlueFlower"
+                    android:textColor="@color/germanGreen"
                     android:textSize="24sp"
                     android:visibility="invisible" />
 
